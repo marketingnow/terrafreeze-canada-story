@@ -121,15 +121,15 @@ const testimonials = [
 
 const products = [
   {
-    img: product2oz, name: "Single 2oz", price: "$24.99", was: "$44.99", badge: null,
+    img: product2oz, name: "Single 2oz", price: "$29.00", was: "$49.00", badge: null,
     href: "https://terrafreeze.ca/product/terrafreeze-pain-relief-cream-1-package-2oz/",
   },
   {
-    img: product3pack, name: "3-Pack 6oz", price: "$39.97", was: "$89.99", badge: "Best Value",
+    img: product3pack, name: "3-Pack 6oz", price: "$49.00", was: "$119.00", badge: "Best Value",
     href: "https://terrafreeze.ca/shop/",
   },
   {
-    img: product6pack, name: "6-Pack 12oz", price: "$69.97", was: "$149.99", badge: null,
+    img: product6pack, name: "6-Pack 12oz", price: "$89.97", was: "$149.99", badge: null,
     href: "https://terrafreeze.ca/product/terrafreeze-pain-relief-cream-6-package/",
   },
 ];
