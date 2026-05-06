@@ -199,7 +199,33 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 5 - Our Mission */}
+      {/* Trust banner strip */}
+      <section className="bg-brand text-white px-5 py-6">
+        <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center gap-5 md:gap-8">
+          <h3 className="font-serif text-xl md:text-2xl shrink-0 md:max-w-[180px] leading-tight">
+            A Cream You Can Trust
+          </h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-3 flex-1 text-center">
+            {[
+              { icon: ShieldCheck, label: "Health Canada NPN" },
+              { icon: ShieldCheck, label: "Batch Tested" },
+              { icon: ShieldCheck, label: "Physician Approved" },
+              { icon: ShieldCheck, label: "Custom Formula" },
+              { icon: MapPin, label: "Made in Canada" },
+              { icon: ShieldCheck, label: "GMP Certified" },
+            ].map((f) => (
+              <div key={f.label} className="flex flex-col items-center gap-1.5">
+                <f.icon className="h-5 w-5" strokeWidth={1.5} />
+                <span className="text-[10px] md:text-[11px] uppercase tracking-[0.15em] opacity-90 leading-tight">
+                  {f.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
       <section className="px-5 py-20 md:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-5xl mb-8">Beyond Temporary Relief</h2>
