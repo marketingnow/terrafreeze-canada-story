@@ -30,43 +30,57 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-  --color-amber: var(--amber);
-  --color-amber-foreground: var(--amber-foreground);
-  --color-surface: var(--surface);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-deep: var(--brand-deep);
+  --color-maple: var(--maple);
+  --color-maple-foreground: var(--maple-foreground);
+  --color-panel: var(--panel);
+  --color-panel-foreground: var(--panel-foreground);
 }
 
 :root {
-  --radius: 0.625rem;
-  /* Brand */
-  --background: oklch(0.975 0.012 230);   /* #f4f8fb */
-  --surface: oklch(1 0 0);                /* white cards */
-  --foreground: oklch(0.24 0.03 245);     /* #1a2530 */
-  --muted-foreground: oklch(0.45 0.03 245); /* #4a6070 */
+  --radius: 0.5rem;
 
-  --card: var(--surface);
+  /* Brand palette derived from TERRAFREEZE Canada logo */
+  --background: oklch(1 0 0);                       /* white */
+  --foreground: oklch(0.22 0.04 240);               /* deep navy/charcoal */
+  --muted-foreground: oklch(0.50 0.02 240);
+
+  --card: oklch(1 0 0);
   --card-foreground: var(--foreground);
-  --popover: var(--surface);
+  --popover: oklch(1 0 0);
   --popover-foreground: var(--foreground);
 
-  --primary: oklch(0.40 0.06 230);        /* #1e4d6b deep blue */
-  --primary-foreground: oklch(0.985 0.005 240);
+  /* TERRAFREEZE bright cyan-blue */
+  --brand: oklch(0.68 0.16 230);                    /* ~#1ba6e0 */
+  --brand-foreground: oklch(1 0 0);
+  --brand-deep: oklch(0.42 0.13 245);               /* dark navy from logo */
 
-  --secondary: oklch(0.95 0.01 230);
-  --secondary-foreground: var(--primary);
+  /* Canadian maple red */
+  --maple: oklch(0.58 0.22 27);                     /* ~#d6202a */
+  --maple-foreground: oklch(1 0 0);
 
-  --muted: oklch(0.95 0.01 230);
-  --accent: oklch(0.93 0.02 230);
-  --accent-foreground: var(--primary);
+  --primary: var(--brand-deep);
+  --primary-foreground: oklch(1 0 0);
 
-  --amber: oklch(0.65 0.16 55);           /* #d4650a */
-  --amber-foreground: oklch(1 0 0);
+  --secondary: oklch(0.97 0.01 230);
+  --secondary-foreground: var(--brand-deep);
+
+  --muted: oklch(0.96 0.01 230);
+  --accent: oklch(0.94 0.03 230);
+  --accent-foreground: var(--brand-deep);
+
+  /* Soft tinted panels (cleanbeauty-style colored bands) */
+  --panel: oklch(0.93 0.04 225);                    /* soft sky blue */
+  --panel-foreground: var(--brand-deep);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.9 0.015 230);
-  --input: oklch(0.9 0.015 230);
-  --ring: var(--primary);
+  --border: oklch(0.92 0.01 230);
+  --input: oklch(0.92 0.01 230);
+  --ring: var(--brand);
 }
 
 @layer base {
@@ -76,13 +90,12 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
-    font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4 {
     font-family: var(--font-serif);
     font-weight: 400;
     letter-spacing: -0.01em;
-    color: var(--primary);
+    color: var(--brand-deep);
   }
 }
