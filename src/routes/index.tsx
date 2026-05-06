@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import {
   Users, ShieldCheck, MapPin, Hand, Activity, ZapOff, Sun, BadgeCheck, Star,
 } from "lucide-react";
-import { Nav } from "@/components/site/Nav";
+
 import lifestyleHands from "@/assets/lifestyle-hands.jpg";
 
 import product2oz from "@/assets/product-2oz.png";
