@@ -3,7 +3,7 @@ import {
   Users, ShieldCheck, MapPin, Hand, Activity, ZapOff, Sun, Star,
 } from "lucide-react";
 
-import lifestyleHands from "@/assets/lifestyle-hands.jpg";
+import heroProduct from "@/assets/hero-product.png";
 
 import product2oz from "@/assets/product-2oz.png";
 import product3pack from "@/assets/product-3pack.png";
