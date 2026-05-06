@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-serif: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -32,54 +32,44 @@
   --color-ring: var(--ring);
   --color-brand: var(--brand);
   --color-brand-foreground: var(--brand-foreground);
-  --color-brand-deep: var(--brand-deep);
-  --color-maple: var(--maple);
-  --color-maple-foreground: var(--maple-foreground);
-  --color-panel: var(--panel);
-  --color-panel-foreground: var(--panel-foreground);
+  --color-amber-cta: var(--amber-cta);
+  --color-amber-cta-foreground: var(--amber-cta-foreground);
 }
 
 :root {
   --radius: 0.5rem;
 
-  /* Brand palette derived from TERRAFREEZE Canada logo */
-  --background: oklch(1 0 0);                       /* white */
-  --foreground: oklch(0.22 0.04 240);               /* deep navy/charcoal */
-  --muted-foreground: oklch(0.50 0.02 240);
+  /* TERRAFREEZE brand spec */
+  --background: oklch(0.975 0.008 240);             /* #f4f8fb */
+  --foreground: oklch(0.22 0.025 240);              /* #1a2530 */
+  --muted-foreground: oklch(0.45 0.025 240);        /* #4a6070 */
 
   --card: oklch(1 0 0);
   --card-foreground: var(--foreground);
   --popover: oklch(1 0 0);
   --popover-foreground: var(--foreground);
 
-  /* TERRAFREEZE bright cyan-blue */
-  --brand: oklch(0.68 0.16 230);                    /* ~#1ba6e0 */
+  --brand: oklch(0.40 0.06 235);                    /* #1e4d6b deep blue */
   --brand-foreground: oklch(1 0 0);
-  --brand-deep: oklch(0.42 0.13 245);               /* dark navy from logo */
 
-  /* Canadian maple red */
-  --maple: oklch(0.58 0.22 27);                     /* ~#d6202a */
-  --maple-foreground: oklch(1 0 0);
+  --amber-cta: oklch(0.62 0.16 50);                 /* #d4650a */
+  --amber-cta-foreground: oklch(1 0 0);
 
-  --primary: var(--brand-deep);
+  --primary: var(--brand);
   --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.97 0.01 230);
-  --secondary-foreground: var(--brand-deep);
+  --secondary: oklch(0.96 0.012 240);
+  --secondary-foreground: var(--brand);
 
-  --muted: oklch(0.96 0.01 230);
-  --accent: oklch(0.94 0.03 230);
-  --accent-foreground: var(--brand-deep);
-
-  /* Soft tinted panels (cleanbeauty-style colored bands) */
-  --panel: oklch(0.93 0.04 225);                    /* soft sky blue */
-  --panel-foreground: var(--brand-deep);
+  --muted: oklch(0.95 0.012 240);
+  --accent: oklch(0.93 0.02 240);
+  --accent-foreground: var(--brand);
 
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
 
-  --border: oklch(0.92 0.01 230);
-  --input: oklch(0.92 0.01 230);
+  --border: oklch(0.90 0.012 240);
+  --input: oklch(0.90 0.012 240);
   --ring: var(--brand);
 }
 
@@ -96,6 +86,6 @@
     font-family: var(--font-serif);
     font-weight: 400;
     letter-spacing: -0.01em;
-    color: var(--brand-deep);
+    color: var(--brand);
   }
 }
