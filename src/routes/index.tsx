@@ -139,21 +139,26 @@ function AboutPage() {
     <div className="min-h-screen bg-background">
       <Nav />
 
-      {/* SECTION 2 — Top Banner */}
-      <section className="px-5 py-16 md:py-24 text-center">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl text-brand">
-          A Canadian Story. Real Relief.
-        </h1>
-      </section>
-
-      {/* SECTION 3 — Hi, We're TERRAFREEZE Canada */}
-      <section id="story" className="px-5 pb-20 md:pb-28">
-        <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-          <div className="text-left">
-            <h2 className="font-serif text-3xl md:text-5xl mb-6 leading-tight">
+      {/* SECTION 2/3 — Split hero: image left, colored panel right */}
+      <section id="story" className="grid md:grid-cols-2">
+        <div className="bg-secondary">
+          <img
+            src={lifestyleHands}
+            alt="Active Canadians enjoying life"
+            width={800}
+            height={800}
+            className="w-full h-[420px] md:h-full md:min-h-[560px] object-cover"
+          />
+        </div>
+        <div className="bg-brand text-white flex items-center">
+          <div className="px-8 md:px-14 py-16 md:py-20 max-w-xl">
+            <p className="text-xs uppercase tracking-[0.25em] mb-5 opacity-80">
+              A Canadian Story · Real Relief
+            </p>
+            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-[1.1] mb-6">
               Hi, We're TERRAFREEZE Canada.
-            </h2>
-            <div className="space-y-5 text-base md:text-[17px] leading-relaxed text-foreground/90">
+            </h1>
+            <div className="space-y-4 text-base md:text-[17px] leading-relaxed text-white/90">
               <p>
                 We started with a simple belief: Canadians dealing with muscle and joint pain
                 deserve a topical relief cream that was actually built for them — not an
@@ -174,17 +179,9 @@ function AboutPage() {
               </p>
             </div>
           </div>
-          <div>
-            <img
-              src={lifestyleHands}
-              alt="Active Canadians enjoying life"
-              width={800}
-              height={800}
-              className="w-full aspect-square object-cover rounded-md"
-            />
-          </div>
         </div>
       </section>
+
 
       {/* SECTION 4 — 3 Brand Pillars */}
       <section className="px-5 py-20 md:py-24 bg-card">
