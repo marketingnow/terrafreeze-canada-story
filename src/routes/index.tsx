@@ -153,7 +153,7 @@ function AboutPage() {
             <p className="text-xs uppercase tracking-[0.25em] mb-5 opacity-80">
               A Canadian Story · Real Relief
             </p>
-            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-[1.1] mb-6">
+            <h1 className="font-serif text-2xl md:text-3xl text-white leading-tight mb-6 whitespace-nowrap">
               Hi, We're TERRAFREEZE Canada.
             </h1>
             <div className="space-y-4 text-base md:text-[17px] leading-relaxed text-white/90">
