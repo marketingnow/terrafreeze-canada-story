@@ -12,13 +12,13 @@ import product6pack from "@/assets/product-6pack.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Our Story — TERRAFREEZE Canada" },
+      { title: "Our Story - TERRAFREEZE Canada" },
       {
         name: "description",
         content:
           "A Canadian story. Real relief. Health Canada NPN-registered topical pain relief, custom-developed and manufactured in Canada.",
       },
-      { property: "og:title", content: "Our Story — TERRAFREEZE Canada" },
+      { property: "og:title", content: "Our Story - TERRAFREEZE Canada" },
       {
         property: "og:description",
         content: "Health Canada NPN-registered topical pain relief, made for Canadians.",
@@ -33,19 +33,19 @@ const pillars = [
     icon: Users,
     title: "Real",
     body:
-      "Real Canadians, real pain, real relief. No exaggerated claims, no marketing fluff — just a formula that works and customers who keep coming back.",
+      "Real Canadians, real pain, real relief. No exaggerated claims, no marketing fluff - just a formula that works and customers who keep coming back.",
   },
   {
     icon: ShieldCheck,
     title: "Trusted",
     body:
-      "Health Canada NPN registered and batch-tested every time. Our certifications aren't a marketing badge — they're the standard we hold ourselves to on every production run.",
+      "Health Canada NPN registered and batch-tested every time. Our certifications aren't a marketing badge - they're the standard we hold ourselves to on every production run.",
   },
   {
     icon: MapPin,
     title: "Built for Canada",
     body:
-      "Custom-developed formula, Canadian manufactured, formulated for the way Canadians actually live — not a generic product shipped across the border.",
+      "Custom-developed formula, Canadian manufactured, formulated for the way Canadians actually live - not a generic product shipped across the border.",
   },
 ];
 
@@ -54,7 +54,7 @@ const conditions = [
     icon: Hand,
     title: "Arthritis & Joint Pain",
     body:
-      "Targeted relief for stiff, swollen, or aching joints — hands, knees, hips, shoulders. Formulated to reduce inflammation and restore comfortable movement.",
+      "Targeted relief for stiff, swollen, or aching joints - hands, knees, hips, shoulders. Formulated to reduce inflammation and restore comfortable movement.",
     href: "https://terrafreeze.ca/best-pain-relief-cream-arthritis-rheumatoid-arthritis/",
   },
   {
@@ -68,14 +68,14 @@ const conditions = [
     icon: ZapOff,
     title: "Nerve & Repetitive Strain",
     body:
-      "Sciatica, carpal tunnel, tennis elbow — the persistent pain that most creams can't reach. TERRAFREEZE is formulated to work on nerve-related discomfort.",
+      "Sciatica, carpal tunnel, tennis elbow - the persistent pain that most creams can't reach. TERRAFREEZE is formulated to work on nerve-related discomfort.",
     href: "https://terrafreeze.ca/conditions/",
   },
   {
     icon: Sun,
     title: "Everyday Aches",
     body:
-      "Pain doesn't need a diagnosis. Yard work, long shifts, an active weekend — TERRAFREEZE is built for the aches that just get in the way of living.",
+      "Pain doesn't need a diagnosis. Yard work, long shifts, an active weekend - TERRAFREEZE is built for the aches that just get in the way of living.",
     href: "https://terrafreeze.ca/conditions/",
   },
 ];
@@ -89,7 +89,7 @@ const tips = [
   {
     title: "Massage in for 30–60 seconds.",
     body:
-      "Don't just dab it on. Working the cream in with circular pressure helps the actives penetrate deeper — which is where the relief actually comes from.",
+      "Don't just dab it on. Working the cream in with circular pressure helps the actives penetrate deeper - which is where the relief actually comes from.",
   },
   {
     title: "Use it consistently for chronic pain.",
@@ -139,7 +139,7 @@ function AboutPage() {
     <div className="min-h-screen bg-background">
       <Nav />
 
-      {/* SECTION 2/3 — Split hero: image left, colored panel right */}
+      {/* SECTION 2/3 - Split hero: image left, colored panel right */}
       <section id="story" className="grid md:grid-cols-2">
         <div className="bg-secondary">
           <img
@@ -161,7 +161,7 @@ function AboutPage() {
             <div className="space-y-4 text-base md:text-[17px] leading-relaxed text-white/90">
               <p>
                 We started with a simple belief: Canadians dealing with muscle and joint pain
-                deserve a topical relief cream that was actually built for them — not an
+                deserve a topical relief cream that was actually built for them - not an
                 afterthought import, but a formula custom-developed, Canadian manufactured,
                 and held to Health Canada's standards from day one.
               </p>
@@ -174,7 +174,7 @@ function AboutPage() {
               <p>
                 We adapted the formula for this market, earned our NPN registration with Health
                 Canada, and set up manufacturing here. Because if you're going to put something
-                on your body every day, it should meet the highest standard available — and in
+                on your body every day, it should meet the highest standard available - and in
                 Canada, that means Health Canada approval.
               </p>
             </div>
@@ -183,7 +183,7 @@ function AboutPage() {
       </section>
 
 
-      {/* SECTION 4 — 3 Brand Pillars */}
+      {/* SECTION 4 - 3 Brand Pillars */}
       <section className="px-5 py-20 md:py-24 bg-card">
         <div className="mx-auto max-w-6xl">
           <p className="text-center text-foreground/75 text-lg md:text-xl mb-14 max-w-3xl mx-auto font-serif italic">
@@ -201,7 +201,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 5 — Our Mission */}
+      {/* SECTION 5 - Our Mission */}
       <section className="px-5 py-20 md:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-serif text-3xl md:text-5xl mb-8">Beyond Temporary Relief</h2>
@@ -209,7 +209,7 @@ function AboutPage() {
             <p>
               Our mission is to provide effective, reliable topical pain relief that restores
               comfort, enhances mobility, and improves daily quality of life. We want to be more
-              than another product on your shelf — we want to be the solution you actually reach for.
+              than another product on your shelf - we want to be the solution you actually reach for.
             </p>
             <p>
               From our early days, we recognized that traditional pain relief options often fell
@@ -221,7 +221,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 6 — Health Canada & GMP */}
+      {/* SECTION 6 - Health Canada & GMP */}
       <section className="bg-brand text-white px-5 py-20 md:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs uppercase tracking-[0.25em] mb-5 opacity-80">
@@ -235,7 +235,7 @@ function AboutPage() {
               This is where we put our money where our mouth is. TERRAFREEZE operates under a
               Health Canada Establishment Licence and is manufactured in a GMP (Good Manufacturing
               Practice) certified facility. That means our production meets Canada's federal
-              standards for safety, quality, and consistency — the same standards applied to
+              standards for safety, quality, and consistency - the same standards applied to
               pharmaceutical manufacturers.
             </p>
             <p>
@@ -262,7 +262,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 7 — What TERRAFREEZE Helps With */}
+      {/* SECTION 7 - What TERRAFREEZE Helps With */}
       <section className="px-5 py-20 md:py-28">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-center font-serif text-3xl md:text-5xl mb-14">
@@ -286,7 +286,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 8 — Education */}
+      {/* SECTION 8 - Education */}
       <section className="bg-card px-5 py-20 md:py-28">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-center font-serif text-3xl md:text-5xl mb-4">
@@ -311,7 +311,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 9 — Testimonials */}
+      {/* SECTION 9 - Testimonials */}
       <section className="px-5 py-20 md:py-28">
         <div className="mx-auto max-w-6xl">
           <p className="text-center text-xs uppercase tracking-[0.25em] text-muted-foreground mb-3">
@@ -341,7 +341,7 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 10 — Products */}
+      {/* SECTION 10 - Products */}
       <section id="shop" className="bg-card px-5 py-20 md:py-28">
         <div className="mx-auto max-w-6xl">
           <p className="text-center text-xs uppercase tracking-[0.25em] text-muted-foreground mb-3">
