@@ -376,9 +376,10 @@ function AboutPage() {
                   </div>
                   <a
                     href={p.href}
-                    className="mt-auto inline-flex items-center justify-center rounded-full bg-amber-cta px-5 py-3 text-sm font-semibold text-amber-cta-foreground hover:opacity-90 transition"
+                    className="mt-auto inline-flex items-center justify-center bg-amber-cta px-5 py-3 text-sm font-semibold text-amber-cta-foreground hover:opacity-90 transition"
+                    style={{ borderRadius: "10px" }}
                   >
-                    Shop Now
+                    ADD TO CART
                   </a>
                 </div>
               </div>
