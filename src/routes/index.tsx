@@ -4,7 +4,7 @@ import {
 } from "lucide-react";
 import { Nav } from "@/components/site/Nav";
 import lifestyleHands from "@/assets/lifestyle-hands.jpg";
-import lifestyleWalk from "@/assets/lifestyle-walk.jpg";
+
 import product2oz from "@/assets/product-2oz.png";
 import product3pack from "@/assets/product-3pack.png";
 import product6pack from "@/assets/product-6pack.png";
@@ -396,8 +396,6 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* lifestyle-walk used to keep import valid in case future use */}
-      <span className="hidden"><img src={lifestyleWalk} alt="" width={1} height={1} /></span>
     </div>
   );
 }
