@@ -249,13 +249,7 @@ function AboutPage() {
               TERRAFREEZE part of their routine.
             </p>
           </div>
-          <div className="mt-12 mx-auto max-w-md rounded-md bg-white/10 border border-white/25 px-8 py-6 flex items-center justify-center gap-3">
-            <BadgeCheck className="h-6 w-6" strokeWidth={1.75} />
-            <span className="font-serif text-2xl md:text-3xl text-white">
-              NPN: [INSERT NPN NUMBER]
-            </span>
-          </div>
-          <p className="mt-6 text-sm text-white/75 max-w-xl mx-auto">
+          <p className="mt-10 text-sm text-white/75 max-w-xl mx-auto">
             Unlike many uncertified products in the market, every TERRAFREEZE product is
             traceable, tested, and approved before it reaches you.
           </p>
