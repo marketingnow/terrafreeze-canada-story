@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import logo from "@/assets/terrafreeze-logo.png";
+import { Menu, X, Snowflake } from "lucide-react";
 
 const links = [
   { label: "Our Story", href: "#story" },
@@ -14,8 +13,12 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="mx-auto max-w-6xl px-5 h-20 flex items-center justify-between">
-        <a href="/" className="flex items-center">
-          <img src={logo} alt="TERRAFREEZE Canada" width={180} height={36} className="h-8 w-auto" />
+        <a href="/" className="flex items-center gap-2 text-brand">
+          <Snowflake className="h-7 w-7" strokeWidth={1.75} />
+          <span className="font-serif text-2xl tracking-tight leading-none">
+            TERRAFREEZE
+          </span>
+          <span className="text-base leading-none" aria-label="Canada">🇨🇦</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-foreground/80">
           {links.map((l) => (
@@ -27,13 +30,13 @@ export function Nav() {
         <div className="hidden md:block">
           <a
             href="https://terrafreeze.ca/shop/"
-            className="inline-flex items-center rounded-full bg-maple px-5 py-2.5 text-sm font-semibold text-maple-foreground hover:opacity-90 transition"
+            className="inline-flex items-center rounded-full bg-amber-cta px-5 py-2.5 text-sm font-semibold text-amber-cta-foreground hover:opacity-90 transition"
           >
             Shop Now
           </a>
         </div>
         <button
-          className="md:hidden text-brand-deep"
+          className="md:hidden text-brand"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -50,7 +53,7 @@ export function Nav() {
             ))}
             <a
               href="https://terrafreeze.ca/shop/"
-              className="inline-flex justify-center rounded-full bg-maple px-5 py-3 text-sm font-semibold text-maple-foreground"
+              className="inline-flex justify-center rounded-full bg-amber-cta px-5 py-3 text-sm font-semibold text-amber-cta-foreground"
             >
               Shop Now
             </a>
