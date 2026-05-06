@@ -137,7 +137,10 @@ const products = [
 function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
-      
+      {/* SECTION 1 - Trust banner */}
+      <div className="bg-brand text-white text-center text-xs md:text-sm tracking-[0.2em] uppercase py-3 px-4">
+        A Cream You Can Trust · Health Canada NPN Registered · Made in Canada
+      </div>
 
       {/* SECTION 2/3 - Split hero: image left, colored panel right */}
       <section id="story" className="grid md:grid-cols-2">
