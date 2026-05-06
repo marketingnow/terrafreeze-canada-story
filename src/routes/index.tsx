@@ -138,17 +138,17 @@ function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* SECTION 2/3 - Split hero: image left, colored panel right */}
-      <section id="story" className="grid md:grid-cols-2 md:items-end">
-        <div className="bg-secondary flex items-end justify-center">
+      <section id="story" className="grid md:grid-cols-2">
+        <div className="bg-secondary flex items-center justify-center p-6 md:p-10">
           <img
             src={heroProduct}
             alt="TERRAFREEZE Extra Strength Pain Relief Cream with natural ingredients"
             width={800}
             height={800}
-            className="w-full h-auto max-h-[560px] object-contain object-bottom"
+            className="w-full h-full max-h-[560px] object-contain"
           />
         </div>
-        <div className="bg-brand text-white flex items-end self-stretch">
+        <div className="bg-brand text-white flex items-center self-stretch">
           <div className="px-8 md:px-14 py-16 md:py-20 max-w-xl">
             <p className="text-xs uppercase tracking-[0.25em] mb-5 opacity-80">
               A Canadian Story · Real Relief
