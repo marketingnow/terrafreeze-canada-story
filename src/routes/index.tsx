@@ -202,7 +202,7 @@ function AboutPage() {
       {/* Trust banner strip */}
       <section className="bg-brand text-white px-5 py-6">
         <div className="mx-auto max-w-6xl flex flex-col md:flex-row md:items-center gap-5 md:gap-8">
-          <h3 className="font-serif text-xl md:text-2xl shrink-0 md:max-w-[180px] leading-tight">
+          <h3 className="font-serif text-xl md:text-2xl shrink-0 md:max-w-[180px] leading-tight" style={{ color: "white" }}>
             A Cream You Can Trust
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-3 flex-1 text-center">
