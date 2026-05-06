@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Users, ShieldCheck, MapPin, Hand, Activity, ZapOff, Sun, BadgeCheck, Star,
+  Users, ShieldCheck, MapPin, Hand, Activity, ZapOff, Sun, Star,
 } from "lucide-react";
 
 import lifestyleHands from "@/assets/lifestyle-hands.jpg";
