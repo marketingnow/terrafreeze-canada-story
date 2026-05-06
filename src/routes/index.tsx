@@ -137,7 +137,7 @@ const products = [
 function AboutPage() {
   return (
     <div className="min-h-screen bg-background">
-      <Nav />
+      
 
       {/* SECTION 2/3 - Split hero: image left, colored panel right */}
       <section id="story" className="grid md:grid-cols-2">
