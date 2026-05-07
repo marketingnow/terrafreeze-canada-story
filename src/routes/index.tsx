@@ -139,24 +139,24 @@ function AboutPage() {
     <div className="min-h-screen bg-background">
       {/* SECTION 2/3 - Split hero: image left, colored panel right */}
       <section id="story" className="grid md:grid-cols-2">
-        <div className="bg-secondary flex items-start justify-center p-4 md:p-6 order-2 md:order-1">
+        <div className="bg-secondary flex items-start justify-center p-4 md:p-6">
           <img
             src={heroProduct}
             alt="TERRAFREEZE Extra Strength Pain Relief Cream with natural ingredients"
             width={800}
             height={800}
-            className="w-full h-auto max-h-[520px] object-contain object-top"
+            className="w-full h-auto max-h-[420px] md:max-h-[520px] object-contain object-top"
           />
         </div>
-        <div className="bg-brand text-white flex items-start self-stretch order-1 md:order-2">
-          <div className="px-8 md:px-12 pt-10 md:pt-14 pb-10 md:pb-14 max-w-xl">
-            <p className="text-xs uppercase tracking-[0.25em] mb-5 opacity-80">
+        <div className="bg-brand text-white flex items-start self-stretch">
+          <div className="px-5 md:px-12 pt-6 md:pt-14 pb-8 md:pb-14 max-w-xl">
+            <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] mb-3 md:mb-5 opacity-80">
               A Canadian Story · Real Relief
             </p>
-            <h1 className="font-serif text-2xl md:text-3xl text-white leading-tight mb-6">
+            <h1 className="font-serif text-xl md:text-3xl text-white leading-tight mb-4 md:mb-6">
               Hi, We're TERRAFREEZE Canada.
             </h1>
-            <div className="space-y-4 text-base md:text-[17px] leading-relaxed text-white/90">
+            <div className="space-y-3 md:space-y-4 text-sm md:text-[17px] leading-relaxed text-white/90">
               <p>
                 We started with a simple belief: Canadians dealing with muscle and joint pain
                 deserve a topical relief cream that was actually built for them - not an
